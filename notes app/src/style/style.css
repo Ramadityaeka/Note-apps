@@ -1,0 +1,88 @@
+/* styles.css */
+:root {
+    --primary-color: #5c67f2;
+    --secondary-color: #f2f2f2;
+    --text-color: #333;
+    --text-secondary-color: #666;
+    --bg-color: #fff;
+    --error-color: #ff3860;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--secondary-color);
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    background: var(--primary-color);
+    padding: 20px 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: blue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+input[type="text"] {
+    height: 40px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+}
+
